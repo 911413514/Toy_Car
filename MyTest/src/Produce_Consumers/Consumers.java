@@ -1,18 +1,19 @@
+package Produce_Consumers;
+
 /**
  * Created by kamen on 2018/3/19.
  */
-public class Producer implements Runnable{//生产者，需要一个篮子好装东西
+public class Consumers implements Runnable {//消费者,负责吃
     Stack stack=null;
 
-    public Producer(Stack stack) {
+    public Consumers(Stack stack) {
         this.stack = stack;
     }
 
-
-    @Override
-    public void run() {
+    public void run(){
         for (int i = 0; i <30 ; i++) {
-            stack.push(new Food(i));
+            Food food=stack.pop();
+            System.out.println("目前吃到了第"+food);
             try {
                 Thread.sleep(500);
             } catch (InterruptedException e) {
