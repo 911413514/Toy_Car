@@ -8,6 +8,6 @@ package OOA_OOD.OverWrite;
 public class GrandMother implements MoreAction{
     @Override
     public void SomeAction(ActionData actionData) {
-        System.out.println("奶奶抱起来");
+        System.out.println("Grandma Walks...");
     }
 }

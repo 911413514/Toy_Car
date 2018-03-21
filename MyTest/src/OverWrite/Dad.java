@@ -9,6 +9,6 @@ package OOA_OOD.OverWrite;
 public class Dad implements MoreAction{
     @Override
     public void SomeAction(ActionData actionData) {
-        System.out.println("父亲喂水喝");
+        System.out.println("Fathe feeds baby..");
     }
 }

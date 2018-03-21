@@ -29,19 +29,14 @@ public class Test {
                 People.add(moreAction);
             }
         } catch (FileNotFoundException e) {
-            System.out.println("找不到该文件");
             e.printStackTrace();
         } catch (IOException e) {
-            System.out.println("文件读取错误");
             e.printStackTrace();
         } catch (ClassNotFoundException e) {
-            System.out.println("找不到该类");
             e.printStackTrace();
         } catch (IllegalAccessException e) {
-            System.out.println("非法访问");
             e.printStackTrace();
         } catch (InstantiationException e) {
-            System.out.println("实例化错误");
             e.printStackTrace();
         }
 
